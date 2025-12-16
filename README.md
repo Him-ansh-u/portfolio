@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfolio Website
 
-## Getting Started
+A modern, responsive **portfolio website** built with **Next.js** to showcase my projects, skills, and experience as a **Full Stack Developer**.
 
-First, run the development server:
+🔗 **Live Demo:** https://portfolio-him-ansh-us-projects.vercel.app/ 
+📂 **Source Code:** https://github.com/Him-ansh-u/portfolio
+
+---
+
+## ✨ Features
+
+- ⚡ Built with **Next.js App Router**
+- 🎨 Modern UI using **Tailwind CSS**
+- 🌌 Animated background using **Three.js / React Three Fiber**
+- 🎥 Smooth animations with **Framer Motion**
+- 📱 Fully responsive design
+- 🚀 CI/CD enabled with **Vercel**
+- 🔍 SEO optimized & performant
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript, JavaScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **3D / Visuals:** Three.js, @react-three/fiber, @react-three/drei
+- **Deployment:** Vercel
+- **Version Control:** Git & GitHub
+
+---
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+.
+├── src/
+│   ├── app/                # App Router pages & layouts
+│   ├── components/         # Reusable UI components
+│   ├── data/               # static Data
+│   └── utils/              # utility and framer motion
+├── public/                 # Static assets
+├── next.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/Him-ansh-u/portfolio.git
+cd your-repo
+npm install
+npm run dev
+```
 
-## Learn More
+Open http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deployed using **Vercel** with CI/CD enabled.
+- Push to `main` → production deployment
+- Pull Requests → preview deployments
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- LinkedIn: https://www.linkedin.com/in/him-ansh-u/
+- Email: himanshu7061sh@gmail.com
+
+---
+
+⭐ If you like this project, consider giving it a star!
