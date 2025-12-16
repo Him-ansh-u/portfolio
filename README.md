@@ -53,7 +53,7 @@ A modern, responsive **portfolio website** built with **Next.js** to showcase my
 
 ```bash
 git clone https://github.com/Him-ansh-u/portfolio.git
-cd your-repo
+cd portfolio
 npm install
 npm run dev
 ```
