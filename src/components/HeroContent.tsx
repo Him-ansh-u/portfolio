@@ -10,6 +10,7 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
+import Button from "./Button";
 
 const HeroContent = () => {
   return (
@@ -56,12 +57,12 @@ const HeroContent = () => {
           variants={slideInFromLeft(1)}
           className="flex gap-2.5"
         >
-          <button className="py-2 px-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]">
+          <Button variant="primary">
             View Projects
-          </button>
-          <button className="py-2 px-3 button-secondary text-center text-white cursor-pointer rounded-lg max-w-[200px]">
+          </Button>
+          <Button variant="outline">
             Download Resume
-          </button>
+          </Button>
         </motion.div>
       </div>
 

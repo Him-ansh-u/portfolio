@@ -12,6 +12,7 @@ export default function Home() {
       <Projects/>
       <Skills/>
       <Encryption />
+      {/* <About /> */}
     </div>
   );
 }

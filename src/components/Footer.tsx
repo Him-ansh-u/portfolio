@@ -54,13 +54,13 @@ const Footer = () => {
                     </p>
                     <p className="flex flex-row items-center my-[15px] cursor-pointer">
                   
-                        <span className="text-[15px] ml-1.5">mifwebchain@gmail.com</span>    
+                        <span className="text-[15px] ml-1.5">himanshu7061sh@gmail.com</span>    
                     </p>
                 </div>
             </div>
 
             <div className="mb-5 text-[15px] text-center">
-                &copy; WebChain Dev 2023 Inc. All rights reserved
+                &copy; 2025 Himanshu Sharma. All rights reserved.
             </div>
         </div>
     </div>
