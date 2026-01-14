@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Encryption from "@/components/Encryption";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -9,10 +10,10 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-center bg-transparent font-sans">
       <Navbar />
       <Hero />
-      <Projects/>
-      <Skills/>
+      <Projects />
+      <Skills />
       <Encryption />
-      {/* <About /> */}
+      <About />
     </div>
   );
 }

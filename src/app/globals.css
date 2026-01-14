@@ -147,3 +147,24 @@ body {
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
+
+
+.nebula {
+  background-image: url("/nebula.webp");
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 30%,
+    black 70%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 30%,
+    black 70%,
+    transparent 100%
+  );
+}
