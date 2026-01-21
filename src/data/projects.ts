@@ -21,7 +21,7 @@ export const PROJECTS = [
       "A full-stack recruitment platform enabling job postings, candidate applications, and recruiter/admin dashboards, built with a scalable backend and modern frontend for a seamless hiring experience.",
     link: "",
     type: "Professional Project",
-    techStack: ["Next.js", "Mantine UI", "Tailwind CSS", "Framer Motion"],
+    techStack: ["Next.js", "Mantine UI", "Tailwind CSS", "Tanstack Query","Framer Motion"],
   },
   {
     title: "AI Chatbot – Personal Assistant",
