@@ -3,7 +3,7 @@ import { RxGithubLogo } from "react-icons/rx";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-transparent text-gray-300 py-10 max-w-355 mx-auto">
+    <footer className="w-full bg-transparent text-gray-300 py-10 max-md:px-3 max-w-355 mx-auto">
       <div className=" mx-auto flex flex-col gap-10">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between gap-10 z-20">
@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="md:w-1/3">
             <h4 className="text-white font-semibold mb-4">Social Media</h4>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-row md:flex-col gap-5 md:gap-3">
               <a
                 href="https://github.com/Him-ansh-u/"
                 rel="noreferrer"

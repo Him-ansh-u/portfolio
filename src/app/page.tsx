@@ -9,14 +9,14 @@ import SKillsNew from "@/components/SkillsNew";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-transparent font-sans">
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <Experience />
       <Projects />
-      {/* <Skills /> */}
+      {/* <Skills />
       <SKillsNew />
       <About />
-      <Education/>
+      <Education/> */}
     </div>
   );
 }
