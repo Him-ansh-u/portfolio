@@ -30,37 +30,5 @@ export const PROJECTS = [
     link: "",
     type: "Personal Project",
     techStack: ["Next.js", "React", "Node.js", "Express", "MongoDB", "JWT"],
-  },
-  {
-    title: "Picture Book: Social Media Platform",
-    description:
-      "A social media platform focused on professional-style content sharing, featuring a feed-based interface, user profiles, post interactions, and authentication. Allowing users to connect and share visual content seamlessly.",
-    link: "",
-    type: "Personal Project",
-    techStack: [
-      "React",
-      "Material-UI",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Redux",
-      "JWT",
-    ],
-  },
-  {
-    title: "College ERP System",
-    description:
-      "A college ERP system built to manage academic workflows, featuring secure authentication using JWT, profile viewing and editing, test scheduling, assignment management, and integrated calendar and to-do functionality.",
-    link: "",
-    type: "Personal Project",
-    techStack: ["HTML", "CSS", "Node.js", "Express", "MongoDB", "JWT", "JQuery"],
-  },
-  {
-    title: "Snake Game — Python Arcade Game",
-    description:
-      "A classic Snake game built with Python and Pygame, featuring real-time controls, collision detection, scoring, and game-over logic. The project demonstrates core game loop mechanics, event handling, and graphics rendering.",
-    link: "",
-    type: "Personal Project",
-    techStack: ["Python", "Pygame"],
-  },
+  }
 ];

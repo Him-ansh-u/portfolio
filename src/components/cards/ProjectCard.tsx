@@ -15,7 +15,8 @@ const ProjectCard = ({ data }: { data: DataType }) => {
   return (
     <a
       href={link}
-      className="relative overflow-hidden rounded-lg shadow-lg border border-primary-accent cursor-pointer z-30"
+      className="relative overflow-hidden rounded-lg border border-primary-accent z-30 shadow-[inset_0_30px_60px_-12px_rgba(50,50,93,0.25),inset_0_18px_36px_-18px_rgba(0,0,0,0.3)] transition-all duration-300 ease-out hover:-translate-y-1
+        hover:border-purple-500/60 hover:shadow-[inset_0_30px_60px_-12px_rgba(139,92,246,0.15),inset_0_18px_36px_-18px_rgba(0,0,0,0.5),0_10px_30px_-10px_rgba(139,92,246,0.25)]"
     >
       <span className="bg-primary-32 text-white/50 py-2 px-3 flex items-center justify-center w-fit rounded-br-lg text-sm">
         {type}
@@ -29,7 +30,7 @@ const ProjectCard = ({ data }: { data: DataType }) => {
           <p className=" text-gray-300">{description}</p>
         </div>
         <Button variant="secondary">
-          View Demo <LuExternalLink />
+          View Live Project <LuExternalLink />
         </Button>
       </div>
     </a>
