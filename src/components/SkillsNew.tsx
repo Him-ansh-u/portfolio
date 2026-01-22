@@ -255,7 +255,7 @@ const ClassificationComponent = ({
 
 const SkillsSection = () => {
   return (
-    <section className="relative overflow-hidden font-sans w-full z-30  ">
+    <section id="skills" className="relative overflow-hidden font-sans w-full z-30  ">
       <div className="flex z-10 flex-col items-start gap-20 h-full relative overflow-hidden px-20 py-20 w-full">
         <div className="flex flex-col gap-2 w-full">
           <h2 className="text-[40px] w-full text-center font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">

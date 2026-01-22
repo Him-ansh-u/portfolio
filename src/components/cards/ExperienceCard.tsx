@@ -7,8 +7,8 @@ interface DataType {
   location: string;
   type: string;
   summary: string;
-  projects: string[];
-  tech: string[];
+  projects?: string[];
+  tech?: string[];
 }
 
 const ExperienceCard = ({ data }: { data: DataType }) => {
@@ -36,10 +36,11 @@ const ExperienceCard = ({ data }: { data: DataType }) => {
           <span className="text-purple-500">•</span>
           <span>{duration}</span>
         </div>
-        <div className="text-gray-300 flex flex-col gap-1">
+        {projects?.length && (
+          <div className="text-gray-300 flex flex-col gap-1">
           Notable Work:{" "}
           <div className="flex gap-2 overflow-x-auto no-scrollbar">
-            {projects.map((project) => (
+            {projects?.map((project) => (
               <span
                 className="shrink-0 px-2 py-1 text-sm bg-linear-to-r from-purple-500/20 via-transparent to-purple-500/20 border border-purple-500 text-white rounded-full"
                 key={project}
@@ -49,11 +50,14 @@ const ExperienceCard = ({ data }: { data: DataType }) => {
             ))}
           </div>
         </div>
+        )}
         <div className="flex flex-col gap-2">
           <p className=" text-gray-300">{summary}</p>
-          <p className="mt-2 text-gray-300 flex flex-col ">
-            Tech Stack <span>{tech.join(", ")}</span>
+          {tech?.length && (
+            <p className="mt-2 text-gray-300 flex flex-col ">
+            Tech Stack <span>{tech?.join(", ")}</span>
           </p>
+          )}
         </div>
       </div>
     </div>

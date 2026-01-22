@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div className="relative overflow-hidden font-sans ">
       <div
-        className="flex z-10 flex-col items-start gap-3 h-full relative overflow-hidden px-20 py-20 w-full"
+        className="flex z-20 flex-col items-start gap-3 h-full relative overflow-hidden px-20 py-20 w-full"
       >
         <div className="relative grid md:grid-cols-2 gap-12 items-center w-full font-sans">
           <div className="text-base">
@@ -11,16 +11,13 @@ const About = () => {
             </h2>
 
             <p className="text-gray-300 mb-6">
-              I&apos;m a passionate full-stack developer who loves building
-              clean, scalable, and user-focused web applications. I enjoy
-              solving real problems with modern technologies and continuously
-              improving my skills.
+              I&apos;m a full-stack developer focused on building scalable, performance-driven web applications with strong attention to UI quality and user experience. I enjoy solving real-world problems using modern technologies and continuously refining my craft.
             </p>
 
             <ul className="space-y-3 text-gray-400 mb-8">
-              <li>🚀 Strong foundation in JavaScript & modern frameworks</li>
-              <li>🧠 Focused on writing clean and maintainable code</li>
-              <li>📚 Always learning and building new projects</li>
+              <li>🚀 Strong foundation in JavaScript, TypeScript, and modern frameworks</li>
+              <li>🧠 Focused on clean architecture and maintainable codebases</li>
+              <li>📚 Actively building and shipping real-world projects</li>
             </ul>
 
             {/* Highlight boxes */}

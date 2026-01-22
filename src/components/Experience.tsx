@@ -34,7 +34,6 @@ const EXPERIENCES = [
     type: "Full-time",
     projects: [
       "NexG Recruitment platform",
-      "Salonix Site",
       "1-Tom Plumber Site",
     ],
     summary:
