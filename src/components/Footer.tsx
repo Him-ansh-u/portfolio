@@ -3,7 +3,7 @@ import { RxGithubLogo } from "react-icons/rx";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-transparent text-gray-300 px-10 py-10 ">
+    <footer className="w-full bg-transparent text-gray-300 py-10 max-w-355 mx-auto">
       <div className=" mx-auto flex flex-col gap-10">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between gap-10 z-20">

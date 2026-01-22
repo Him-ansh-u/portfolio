@@ -5,7 +5,7 @@ const About = () => {
         className="flex z-20 flex-col items-start gap-3 h-full relative overflow-hidden px-20 py-20 w-full"
       >
         <div className="relative grid md:grid-cols-2 gap-12 items-center w-full font-sans">
-          <div className="text-base">
+          <div className="text-base max-w-355 mx-auto">
             <h2 className="text-4xl font-bold mb-6 bg-linear-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
               About Me
             </h2>

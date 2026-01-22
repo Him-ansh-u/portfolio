@@ -1,6 +1,6 @@
 import { Socials } from "@/data";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -25,13 +25,13 @@ const Navbar = () => {
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
-              About me
+            <a href="#home" className="cursor-pointer hover:text-blue-400">
+              Home
             </a>
-            <a href="#skills" className="cursor-pointer">
+            <a href="#skills" className="cursor-pointer hover:text-blue-400">
               Skills
             </a>
-            <a href="#projects" className="cursor-pointer">
+            <a href="/projects" className="cursor-pointer hover:text-blue-400">
               Projects
             </a>
           </div>
@@ -39,13 +39,15 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
+            <Link href={social.link} key={social.name} target="_blank" rel="noopener noreferrer" title={social.name}>
             <Image
               src={social.src}
               alt={social.name}
               key={social.name}
               width={24}
               height={24}
-            />
+              />
+            </Link>
           ))}
         </div>
       </div>

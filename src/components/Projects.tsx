@@ -6,13 +6,13 @@ import { LuArrowUpRight } from "react-icons/lu";
 const Projects = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center py-20 "
+      className="flex flex-col items-center justify-center py-20 max-w-355 mx-auto"
       id="projects"
     >
       <h2 className="text-[40px] font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500 pb-20">
         Top Projects
       </h2>
-      <div className="h-full w-full grid grid-cols-3 gap-10 px-10">
+      <div className="h-full w-full grid grid-cols-3 gap-10">
         {PROJECTS.map((item) => (
           <ProjectCard data={item} key={item.title} />
         ))}
