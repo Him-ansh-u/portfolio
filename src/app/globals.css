@@ -171,35 +171,6 @@ body {
     transparent 100%
   );
 }
-.nebula1 {
-  background-image: url("/nebula1.webp");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  image-rendering: crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-
-  /* Much stronger all-side fade */
-  -webkit-mask-image: radial-gradient(
-    ellipse at center,
-    black 35%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0.4) 65%,
-    transparent 80%
-  );
-
-  mask-image: radial-gradient(
-    ellipse at center,
-    black 35%,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0.4) 65%,
-    transparent 80%
-  );
-}
-
 
 .no-scrollbar {
   scrollbar-width: none;
