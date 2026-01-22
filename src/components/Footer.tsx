@@ -1,70 +1,65 @@
-import {
-    RxDiscordLogo,
-    RxGithubLogo
-} from "react-icons/rx";
-
-import { FaYoutube } from "react-icons/fa";
+import { GrLinkedin } from "react-icons/gr";
+import { RxGithubLogo } from "react-icons/rx";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-4 pt-10">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
+    <footer className="w-full bg-transparent text-gray-300 px-3 2xl:px-0 py-10 max-md:px-3 max-w-355 mx-auto">
+      <div className=" mx-auto flex flex-col gap-10">
+        {/* Top Section */}
+        <div className="flex flex-col md:flex-row justify-between gap-10 z-20">
+          {/* Left */}
+          <div className="md:w-2/3">
+            <h3 className="text-xl font-semibold text-white mb-4">
+              Let’s build something meaningful
+            </h3>
 
-                <div className="min-w-50 h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-3.5 cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-1.5">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-3.75 cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-1.5">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-3.75 cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-1.5">Discord</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-1.5">himanshu7061sh@gmail.com</span>    
-                    </p>
-                </div>
-            </div>
+            <p className="text-sm leading-6 text-gray-400 max-w-xl">
+              I’m Himanshu, a Full Stack Developer specializing in building
+              fast, scalable, and user-focused web applications using Next.js,
+              React, and Node.js. Currently open to full-time opportunities and
+              impactful projects.
+            </p>
 
-            <div className="mb-5 text-[15px] text-center">
-                &copy; 2025 Himanshu Sharma. All rights reserved.
+            <p className="mt-4 text-sm text-gray-500">
+              Based in Noida, India • Available Remote
+            </p>
+          </div>
+
+          {/* Right */}
+          <div className="md:w-1/3">
+            <h4 className="text-white font-semibold mb-4">Social Media</h4>
+
+            <div className="flex flex-row md:flex-col gap-5 md:gap-3">
+              <a
+                href="https://github.com/Him-ansh-u/"
+                rel="noreferrer"
+                target="_blank"
+                className="flex items-center gap-2 hover:text-blue-400 transition"
+              >
+                <RxGithubLogo size={18} />
+                <span>Github</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/him-ansh-u/"
+                rel="noreferrer"
+                target="_blank"
+                className="flex items-center gap-2 hover:text-blue-400 transition"
+              >
+                <GrLinkedin size={16} />
+                <span>LinkedIn</span>
+              </a>
             </div>
+          </div>
         </div>
-    </div>
-  )
-}
 
-export default Footer
+        {/* Bottom */}
+        <div className="border-t border-white/10 pt-6 text-center text-sm text-gray-500">
+          © {new Date().getFullYear()} Himanshu Sharma. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
