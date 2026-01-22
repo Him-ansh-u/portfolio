@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: "https://portfolio-him-ansh-us-projects.vercel.app/og_img.webp",
     images: [
       {
-        url: "https://portfolio-him-ansh-us-projects.vercel.app/og_image.webp",
+        url: "https://portfolio-him-ansh-us-projects.vercel.app/og_img.webp",
         width: 1200,
         height: 630,
         alt: "Himanshu Sharma Portfolio",
