@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../Button";
 import { LuExternalLink } from "react-icons/lu";
 
@@ -13,8 +14,10 @@ const ProjectCard = ({ data }: { data: DataType }) => {
   const { title, description, link, type, techStack } = data;
 
   return (
-    <a
+    <Link
       href={link}
+      target="_blank"
+      rel="noopener noreferrer"
       className="relative overflow-hidden rounded-lg border border-primary-accent z-30 shadow-[inset_0_30px_60px_-12px_rgba(50,50,93,0.25),inset_0_18px_36px_-18px_rgba(0,0,0,0.3)] transition-all duration-300 ease-out hover:-translate-y-1
         hover:border-purple-500/60 hover:shadow-[inset_0_30px_60px_-12px_rgba(139,92,246,0.15),inset_0_18px_36px_-18px_rgba(0,0,0,0.5),0_10px_30px_-10px_rgba(139,92,246,0.25)]"
     >
@@ -33,7 +36,7 @@ const ProjectCard = ({ data }: { data: DataType }) => {
           View Live Project <LuExternalLink />
         </Button>
       </div>
-    </a>
+    </Link>
   );
 };
 

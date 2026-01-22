@@ -54,8 +54,8 @@ const EXPERIENCES = [
 const Experience = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center px-3 max-w-355 mx-auto pt-20 pb-10"
-      id="projects"
+      className="flex flex-col items-center justify-center px-3 2xl:px-0 max-w-355 mx-auto pt-14 md:pt-20 pb-14 md:pb-10"
+      id="experience"
     >
       <h2 className="text-[40px] font-semibold h-fit pb-10 md:pb-20 text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
         Experience

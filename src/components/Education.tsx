@@ -24,7 +24,7 @@ const EDUCATION = [
 
 const Education = () => {
   return (
-    <section id="education" className="flex flex-col items-center justify-center max-md:px-3 max-w-355 mx-auto py-20">
+    <section id="education" className="flex flex-col items-center justify-center px-3 2xl:px-0 max-w-355 mx-auto pt-0 md:pt-20 pb-14 md:pb-10">
       <h2 className="text-[40px] font-semibold h-fit pb-10 md:pb-20 text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
         Education
       </h2>

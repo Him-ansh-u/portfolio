@@ -10,15 +10,16 @@ import {
 } from "@/utils/motion";
 
 import Button from "./Button";
+import Link from "next/link";
 
 const HeroContent = () => {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center max-w-355 md:mx-auto mt-20  md:mt-36 w-full z-[20]"
+      className="flex flex-row items-center justify-center max-w-355 md:mx-auto mt-20  md:mt-36 w-full z-20"
     >
-      <div className="h-full w-full md:w-[55%] flex flex-col gap-2 justify-center px-3 md:px-0 md:m-auto text-start">
+      <div className="h-full w-full md:w-[55%] flex flex-col gap-2 justify-center px-3 2xl:px-0 md:m-auto text-start">
         
         {/* Badge */}
         <motion.div
@@ -72,8 +73,12 @@ const HeroContent = () => {
           variants={slideInFromLeft(1)}
           className="flex gap-2.5 mt-2"
         >
-          <Button variant="primary">View Projects</Button>
+          <Link href="#projects">
+            <Button variant="primary">View Projects</Button>
+          </Link>
+          <Link href="/Himanshu_Kumar_Sharma_Resume.pdf" download target="_blank" rel="noopener noreferrer">
           <Button variant="outline">Download Resume</Button>
+          </Link>
         </motion.div>
          <motion.ul
           variants={slideInFromLeft(1.2)}

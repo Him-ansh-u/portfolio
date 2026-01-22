@@ -1,9 +1,10 @@
+import Link from "next/link";
+import Button from "./Button";
+
 const About = () => {
   return (
     <div className="relative overflow-hidden font-sans ">
-      <div
-        className="flex z-20 flex-col items-start gap-3 h-full relative overflow-hidden px-3 md:px-20 py-20 w-full"
-      >
+      <div className="flex z-20 flex-col items-start gap-3 h-full relative overflow-hidden px-3 md:px-18 pt-0 md:pt-20 pb-14 md:pb-10 w-full">
         <div className="relative grid md:grid-cols-2 gap-12 items-center w-full font-sans">
           <div className="text-base max-w-355 mx-auto">
             <h2 className="text-4xl text-center md:text-start font-bold mb-6 bg-linear-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
@@ -11,12 +12,20 @@ const About = () => {
             </h2>
 
             <p className="text-gray-300 mb-6 text-sm md:text-base">
-              I&apos;m a full-stack developer focused on building scalable, performance-driven web applications with strong attention to UI quality and user experience. I enjoy solving real-world problems using modern technologies and continuously refining my craft.
+              I&apos;m a full-stack developer focused on building scalable,
+              performance-driven web applications with strong attention to UI
+              quality and user experience. I enjoy solving real-world problems
+              using modern technologies and continuously refining my craft.
             </p>
 
             <ul className="space-y-3 text-sm md:text-base text-gray-400 mb-8">
-              <li>🚀 Strong foundation in JavaScript, TypeScript, and modern frameworks</li>
-              <li>🧠 Focused on clean architecture and maintainable codebases</li>
+              <li>
+                🚀 Strong foundation in JavaScript, TypeScript, and modern
+                frameworks
+              </li>
+              <li>
+                🧠 Focused on clean architecture and maintainable codebases
+              </li>
               <li>📚 Actively building and shipping real-world projects</li>
             </ul>
 
@@ -32,16 +41,19 @@ const About = () => {
                 <p className="text-sm text-gray-400 mt-1">Projects Worked On</p>
               </div>
             </div>
-
-            <button className="px-6 py-3 rounded-xl w-full md:w-fit bg-purple-600/20 border border-purple-400/30 text-purple-300 hover:bg-purple-600/30 transition">
-              Download Resume
-            </button>
+            <Link
+              href="/Himanshu_Kumar_Sharma_Resume.pdf"
+              target="_blank"
+              download
+            >
+              <Button variant="primary">Download Resume</Button>
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Nebula background */}
-      <div className="nebula absolute h-[600px] w-screen top-0 max-md:hidden" />
+      <div className="nebula absolute h-[580px] w-screen top-0 max-md:hidden" />
     </div>
   );
 };

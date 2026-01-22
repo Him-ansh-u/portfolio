@@ -92,6 +92,9 @@ body {
    🔘 BUTTONS
    ========================================================= */
 .button-primary {
+   padding: 0.6rem 1.4rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
   background:
     linear-gradient(180deg, transparent 0%, var(--color-primary-32) 100%),
     var(--color-primary-24);

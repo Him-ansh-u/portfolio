@@ -256,7 +256,7 @@ const ClassificationComponent = ({
 const Skills = () => {
   return (
     <section id="skills" className="relative overflow-hidden font-sans w-full z-30  ">
-      <div className="flex z-10 flex-col items-start gap-10 md:gap-20 h-full relative overflow-hidden px-3 max-w-355 mx-auto py-20 w-full">
+      <div className="flex z-10 flex-col items-start gap-10 md:gap-20 h-full relative overflow-hidden px-3 2xl:px-0 max-w-355 mx-auto pt-0 md:pt-20 pb-14 md:pb-10 w-full">
         <div className="flex flex-col gap-2 w-full">
           <h2 className="text-[40px] w-full text-center font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
             Skills
