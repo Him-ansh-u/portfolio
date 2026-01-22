@@ -7,7 +7,7 @@ const skillsClassification = [
       box: "col-span-1 md:col-span-2",
       grid: "mx-auto w-fit grid-cols-3",
       header:
-        "bg-linear-to-r from-blue-500/10 via-blue-500/40 to-blue-500/10 border-blue-500 border-l-0 border-r-0 rounded-sm",
+        "bg-linear-to-r from-blue-500/10 via-blue-500/40 to-blue-500/10 border-blue-500 md:border-l-0 md:border-r-0 rounded-sm",
     },
     skills: [
       {
@@ -167,7 +167,7 @@ const skillsClassification = [
       box: "col-span-1 md:col-span-2",
       grid: "mx-auto w-fit grid-cols-4",
       header:
-        "bg-linear-to-r from-orange-500/10 via-orange-500/50 to-orange-500/10 border-orange-500 border-l-0 border-r-0 rounded-sm",
+        "bg-linear-to-r from-orange-500/10 via-orange-500/50 to-orange-500/10 border-orange-500 md:border-l-0 md:border-r-0 rounded-sm",
     },
     skills: [
       {
@@ -203,7 +203,7 @@ const ClassificationComponent = ({
   return (
     <div className={`rounded-lg z-50 ${classname.box}`}>
       <h3
-        className={`text-xl font-bold mb-4 min-w-[400px] text-center py-3 border backdrop-blur-md rounded-lg ${classname.header}`}
+        className={`text-xl font-bold mb-4 text-center py-3 border backdrop-blur-md rounded-lg ${classname.header}`}
       >
         {title}
       </h3>
@@ -220,7 +220,7 @@ const ClassificationComponent = ({
               alt={skill.name}
               className="w-10 h-10 transition-transform group-hover:scale-110"
             />
-            <h4 className="font-semibold">{skill.name}</h4>
+            <h4 className="font-semibold text-nowrap">{skill.name}</h4>
 
             {/* Hover Box */}
             <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100] pointer-events-none">
@@ -253,10 +253,10 @@ const ClassificationComponent = ({
   );
 };
 
-const SkillsSection = () => {
+const Skills = () => {
   return (
     <section id="skills" className="relative overflow-hidden font-sans w-full z-30  ">
-      <div className="flex z-10 flex-col items-start gap-20 h-full relative overflow-hidden max-w-355 mx-auto py-20 w-full">
+      <div className="flex z-10 flex-col items-start gap-10 md:gap-20 h-full relative overflow-hidden px-3 max-w-355 mx-auto py-20 w-full">
         <div className="flex flex-col gap-2 w-full">
           <h2 className="text-[40px] w-full text-center font-semibold text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
             Skills
@@ -285,10 +285,8 @@ const SkillsSection = () => {
           />
         </div>
       </div>
-      {/* Nebula background */}
-      {/* <div className="nebula1 absolute h-[570px] w-screen bottom-10" /> */}
     </section>
   );
 };
 
-export default SkillsSection;
+export default Skills;

@@ -54,13 +54,13 @@ const EXPERIENCES = [
 const Experience = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center max-w-355 mx-auto pt-20 pb-10"
+      className="flex flex-col items-center justify-center px-3 max-w-355 mx-auto pt-20 pb-10"
       id="projects"
     >
-      <h2 className="text-[40px] font-semibold h-fit pb-20 text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
+      <h2 className="text-[40px] font-semibold h-fit pb-10 md:pb-20 text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500">
         Experience
       </h2>
-      <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
         {EXPERIENCES.map((item) => (
           <ExperienceCard data={item} key={item.company} />
         ))}

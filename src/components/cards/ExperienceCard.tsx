@@ -54,7 +54,7 @@ const ExperienceCard = ({ data }: { data: DataType }) => {
         <div className="flex flex-col gap-2">
           <p className=" text-gray-300 text-sm sm:text-base">{summary}</p>
           {tech?.length && (
-            <p className="mt-2 text-gray-300 flex flex-col ">
+            <p className="mt-2 text-gray-300 flex flex-col text-sm md:text-base">
             Tech Stack <span>{tech?.join(", ")}</span>
           </p>
           )}
