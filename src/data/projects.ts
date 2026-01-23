@@ -21,7 +21,13 @@ export const PROJECTS = [
       "A full-stack recruitment platform enabling job postings, candidate applications, and recruiter/admin dashboards, built with a scalable backend and modern frontend for a seamless hiring experience.",
     link: "https://www.nexg.tech/",
     type: "Professional Project",
-    techStack: ["Next.js", "Mantine UI", "Tailwind CSS", "Tanstack Query","Framer Motion"],
+    techStack: [
+      "Next.js",
+      "Mantine UI",
+      "Tailwind CSS",
+      "Tanstack Query",
+      "Framer Motion",
+    ],
   },
   {
     title: "AI Chatbot – Personal Assistant",
@@ -30,9 +36,8 @@ export const PROJECTS = [
     link: "https://ai-chatbot-rdgstdkd8-him-ansh-us-projects.vercel.app/",
     type: "Personal Project",
     techStack: ["Next.js", "React", "Node.js", "Express", "MongoDB", "JWT"],
-  }
+  },
 ];
-
 
 export const CASE_STUDIES = [
   {
@@ -48,7 +53,7 @@ export const CASE_STUDIES = [
     summary: [
       "Built a production-grade real estate platform for buyers and property owners.",
       "Focused on performance, scalability, and clean UI/UX.",
-      "Implemented advanced search filters and direct user communication.",
+      "Improved authentication flows, logging, and overall application stability.",
     ],
 
     techStack: {
@@ -59,39 +64,58 @@ export const CASE_STUDIES = [
     },
 
     role: [
-      "Designed overall system architecture",
-      "Built frontend with reusable components and responsive UI",
-      "Developed REST APIs using Node.js and Express",
-      "Designed MongoDB schemas and optimized queries",
-      "Handled deployment and environment configuration",
+      "Built frontend features using reusable components and responsive UI",
+      "Developed and maintained REST APIs using Node.js and Express",
+      "Worked with MongoDB schemas and optimized queries for performance",
+      "Contributed to deployment tasks and environment configuration",
+      "Improved authentication flows and session handling",
+      "Implemented structured logging for debugging and monitoring",
+      "Integrated Facebook and Instagram Graph APIs",
     ],
-
     features: [
-      "JWT-based authentication system",
-      "Smart search filters for location, budget, and property type",
-      "Free property posting for owners",
-      "Direct owner-to-user messaging system",
-      "Mobile responsive UI",
+      "JWT-based authentication and improved session handling",
+      "Performance-optimized APIs and frontend rendering",
+      "Responsive UI across mobile and desktop devices",
+      "Structured logging for better debugging and monitoring",
+      "Facebook and Instagram Graph API integration for ad publishing",
     ],
 
     challenges: [
       {
-        problem: "Search filters were slow with increasing data size",
+        problem:
+          "Critical CSS issue in Next.js 14 caused CSS to block initial page load and hurt performance",
         solution:
-          "Optimized MongoDB queries and added indexes for frequent fields",
+          "Temporarily resolved using a custom postBuild script to inject missing CSS, later confirmed fixed in Next.js 15 canary",
       },
       {
-        problem: "Unnecessary re-renders in frontend affecting performance",
-        solution: "Refactored components and used memoization patterns",
+        problem:
+          "Next.js 14 issue where setting cookies via Server Actions caused full app reload and state reset",
+        solution:
+          "Avoided Server Actions for cookie mutation and handled cookies through API routes instead",
       },
       {
-        problem: "Deployment instability during traffic spikes",
+        problem:
+          "Auth edge cases and unreliable logging due to middleware limitations (always returned 200)",
         solution:
-          "Configured better process handling and optimized server setup",
+          "Improved auth flow and built a custom Next.js server for accurate request/response logging",
+      },
+      {
+        problem:
+          "Global state updates were causing unnecessary re-renders and UI inconsistencies",
+        solution: "Optimized Zustand store usage and refactored selectors",
       },
     ],
 
-    tools: ["Git", "Postman", "Jira"],
+    tools: [
+      "VS Code",
+      "GitHub",
+      "Postman",
+      "Jira",
+      "Lighthouse",
+      "React DevTools",
+      "Google PageSpeed Insights",
+      "Screaming Frog SEO Spider",
+    ],
   },
   {
     title: "NexG – Recruitment Dashboard",
@@ -104,22 +128,28 @@ export const CASE_STUDIES = [
     github: "",
 
     summary: [
-      "Built an end-to-end recruitment platform used internally by teams.",
+      "Built an end-to-end recruitment platform used internally by team and candidate.",
       "Designed scalable frontend architecture with efficient data fetching.",
       "Focused on UX for recruiters and candidates.",
     ],
 
     techStack: {
-      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "Mantine UI"],
+      frontend: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Mantine UI",
+        "Material UI",
+      ],
       backend: ["Node.js", "Express.js"],
       database: ["MongoDB"],
       cloud: ["Vercel"],
     },
 
     role: [
-      "Designed overall frontend architecture",
-      "Built reusable UI components using Mantine",
-      "Integrated TanStack Query for optimized API handling",
+      "Developed overall frontend architecture",
+      "Built reusable UI components using Mantine, Tailwind CSS and Material UI",
+      "Integrated TanStack Query for optimized API and query handling",
       "Implemented authentication and protected routes",
       "Collaborated with backend team on API contracts",
     ],
@@ -136,12 +166,19 @@ export const CASE_STUDIES = [
       {
         problem: "Slow performance when loading large candidate lists",
         solution:
-          "Implemented pagination, caching, and TanStack Query optimizations",
+          "Implemented pagination, caching, and optimized data fetching using TanStack Query",
       },
       {
-        problem: "Complex state handling across dashboard views",
+        problem:
+          "Auto-generating assignment questions based on job descriptions was inconsistent and hard to maintain",
         solution:
-          "Refactored into reusable hooks and component-driven architecture",
+          "Refactored logic into reusable hooks and modular utilities for better reliability",
+      },
+      {
+        problem:
+          "Complex state handling across multiple dashboard views caused bugs and re-renders",
+        solution:
+          "Restructured state management and refactored into reusable hooks and cleaner component architecture",
       },
     ],
 
@@ -186,17 +223,17 @@ export const CASE_STUDIES = [
 
     challenges: [
       {
-        problem: "Managing real-time performance with multiple sessions",
-        solution:
-          "Optimized WebSocket events and reduced unnecessary re-renders",
+        problem: "Minor edge cases in authentication flows during testing",
+        solution: "Refined JWT handling and improved validation logic",
       },
       {
-        problem: "Session persistence across refreshes",
-        solution: "Designed backend session storage with MongoDB",
+        problem: "Some endpoints lacked consistent error handling initially",
+        solution:
+          "Improved response structure and added proper status handling",
       },
     ],
 
-    tools: ["Git", "Postman"],
+    tools: ["GitHub Desktop", "Postman", "Google Gemini"],
   },
 
   {

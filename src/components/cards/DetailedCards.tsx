@@ -37,31 +37,45 @@ const DetailedProjectCard = ({ data }: { data: TProjectSchema }) => {
 
       {/* Buttons */}
       <div className="flex gap-4">
-        <Link
-          href={data.live}
-          target="_blank"
-          className="px-4 py-2 rounded-lg bg-purple-600/20 border border-purple-500/30 text-purple-300 flex gap-2 items-center"
-        >
-          Live Demo <LuExternalLink />
-        </Link>
-
-        <Link
-          href={data.github}
-          target="_blank"
-          className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-300 flex gap-2 items-center"
-        >
-          GitHub <FaGithub />
-        </Link>
+        {data.live && (
+          <Link
+            href={data.live}
+            target="_blank"
+            className="px-4 py-2 rounded-lg bg-purple-600/20 border border-purple-500/30 text-purple-300 flex gap-2 items-center"
+          >
+            Live Demo <LuExternalLink />
+          </Link>
+        )}
+        {data.github && (
+          <Link
+            href={data.github}
+            target="_blank"
+            className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-gray-300 flex gap-2 items-center"
+          >
+            GitHub <FaGithub />
+          </Link>
+        )}
       </div>
 
       {/* Sections */}
       <Section title="Summary" items={data.summary} />
 
       <div className="grid md:grid-cols-2 gap-6">
-        <Stack title="Frontend" items={data.techStack.frontend} />
-        <Stack title="Backend" items={data.techStack.backend} />
-        <Stack title="Database" items={data.techStack.database} />
-        <Stack title="Cloud" items={data.techStack.cloud} />
+        {data?.techStack?.frontend?.length > 0 && (
+          <Stack title="Frontend" items={data.techStack.frontend} />
+        )}
+
+        {data?.techStack?.backend?.length > 0 && (
+          <Stack title="Backend" items={data.techStack.backend} />
+        )}
+
+        {data?.techStack?.database?.length > 0 && (
+          <Stack title="Database" items={data.techStack.database} />
+        )}
+
+        {data?.techStack?.cloud?.length > 0 && (
+          <Stack title="Cloud" items={data.techStack.cloud} />
+        )}
       </div>
 
       <Section title="Role" items={data.role} />
