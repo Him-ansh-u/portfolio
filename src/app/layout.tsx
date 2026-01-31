@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Himanshu Sharma | Full Stack Developer",
     description:
       "Portfolio of Himanshu Sharma – Full Stack Developer building modern, high-performance web apps.",
-    url: "https://portfolio-him-ansh-us-projects.vercel.app/og_img.webp",
+    url: "https://portfolio-him-ansh-us-projects.vercel.app/",
     images: [
       {
         url: "https://portfolio-him-ansh-us-projects.vercel.app/og_img.webp",
